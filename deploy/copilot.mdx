@@ -70,6 +70,8 @@ export interface IWidgetConfig {
   accessToken?: string;
   // Theme of the copilot
   theme?: "light" | "dark";
+  // The custom CSS file for the button and widget
+  customCssUrl?: string;
   // Custom styling to apply to the widget button
   button?: {
     // ID of the container element to mount the button to
@@ -79,6 +81,7 @@ export interface IWidgetConfig {
     // The tailwind classname to apply to the button
     className?: string;
   };
+
 }
 ```
 
